@@ -1,0 +1,121 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.header{
+    font-size: 3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    word-spacing: 0.6rem;
+}
+
+.first{
+    margin: 0.9rem;
+    font-size: 1.3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.3rem;
+}
+
+.second{
+    margin: 0.5rem;
+    font-size: 0.7rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.phone{
+    margin: 0.2rem;
+    font-size: 0.7rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+nav {
+    background-color: aliceblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.461);
+    padding: 3rem;
+    text-align: center;
+}
+
+nav a{
+    font: 600 1.5rem cursive;
+    color: black;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+input{
+    padding: 0.7rem;
+    border: 1px solid rgb(196, 196, 196, 0.683);
+    outline: none;
+    border-radius: 5px;
+}
+
+form{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.coin{
+    gap: 10px;
+    padding: 2rem;
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.coin > img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.coin > h1 {
+    text-transform: uppercase;
+}
+
+.loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+
+.loading > p {
+    font: 400 2rem sans-serif;
+    margin: 3rem;
+}
+
+.loading > div {
+    width: 300px;
+    height: 300px;
+    border-bottom: 4px solid rgb(52, 51, 51);
+    border-radius: 50%;
+    animation: rotation 0.4s infinite linear;
+}
+
+@keyframes rotation {
+    to{
+        transform: rotateZ(360deg);
+    }
+}
